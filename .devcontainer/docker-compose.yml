@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ../..:/workspaces:cached
+    command: sleep infinity
+    networks:
+      - postgres-network
+
+  postgres:
+    image: postgres:latest
+    restart: unless-stopped
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: R9eAj4UH7meD8Typ
+      POSTGRES_USER: bw_admin
+      POSTGRES_DB: browser_workspace
+    networks:
+      - postgres-network
+      
+volumes:
+  postgres-data:
+
+networks:
+  postgres-network:
