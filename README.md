@@ -1,2 +1,3 @@
-# browser-workspace-backend
-BW Back-End - Browser Workspace Back-End
+# BW - Browser Workspace Back-End
+
+BW - Browser Workspace Back-End
