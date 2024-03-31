@@ -10,6 +10,7 @@ services:
     command: sleep infinity
     networks:
       - postgres-network
+      - mongodb-network
 
   postgres:
     image: postgres:latest
@@ -22,9 +23,23 @@ services:
       POSTGRES_DB: browser_workspace
     networks:
       - postgres-network
-      
+
+  mongodb:
+    image: mongo:latest
+    restart: unless-stopped
+    volumes:
+      - mongodb-data:/data/db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: bw_admin
+      MONGO_INITDB_ROOT_PASSWORD: 7DKCKwpfTiY54xqk
+      MONGO_INITDB_DATABASE: bw-images
+    networks:
+      - mongodb-network
+
 volumes:
   postgres-data:
+  mongodb-data:
 
 networks:
   postgres-network:
+  mongodb-network:

@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node-postgres
 {
-	"name": "Node.js & PostgreSQL",
+	"name": "Browser Workspace",
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "app",
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
@@ -16,7 +16,9 @@
 				"humao.rest-client",
 				"Gruntfuggly.todo-tree",
 				"streetsidesoftware.code-spell-checker-turkish",
-				"redhat.vscode-yaml"
+				"redhat.vscode-yaml",
+				"mongodb.mongodb-vscode",
+				"rangav.vscode-thunder-client"
 			]
 		}
 	}

@@ -1,10 +1,13 @@
 {
   "name": "browser-workspace-backend",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "BW creates a customizable and more beautiful start page when a new tab is opened in the browser. Various widgets can be added and edited. You can save your data and synchronize it on different devices by logging in.",
+  "author": {
+    "name": "Fatih BARAÇKILIÇ",
+    "email": "fatihb469@gmail.com"
+  },
   "private": true,
-  "license": "UNLICENSED",
+  "license": "Apache-2.0",
   "scripts": {
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
