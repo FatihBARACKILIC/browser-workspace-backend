@@ -6,9 +6,10 @@ POST {{url}} HTTP/1.1
 Content-Type: application/json
 
 {
-    "url": "https://unsplash.com/collections/917009/city-%2F-skyline"
+    "url": "https://unsplash.com/collections/592682/spring"
 }
 ### "url": "https://unsplash.com/collections/917009/city-%2F-skyline"
+### "url": "https://unsplash.com/collections/592682/spring"
 
 ### Find by Id
 # @name findById
