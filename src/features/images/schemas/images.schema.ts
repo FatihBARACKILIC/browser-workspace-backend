@@ -17,11 +17,11 @@ export class Image {
   height: number;
   @Prop({ required: true })
   color: string;
-  @Prop({ required: true })
+  @Prop()
   blur_hash: string;
   @Prop()
   description: string;
-  @Prop({ required: true })
+  @Prop()
   alt_description: string;
   @Prop(
     raw({

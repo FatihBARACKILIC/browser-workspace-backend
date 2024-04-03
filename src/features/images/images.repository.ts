@@ -23,7 +23,7 @@ export class ImageRepository {
     const newImageModel = new this.imageModel({ ...image, slug });
     try {
       const newImage = await newImageModel.save();
-      return await this.findByUnsplashId(newImage.id);
+      return newImage;
     } catch (error) {
       if (error instanceof MongoError && error.code === 11000) {
         return await this.findByUnsplashId(image.id);

@@ -10,6 +10,7 @@ import { PhotographersModule } from './features/photographers/photographers.modu
 import { envConfig } from './modules/config';
 import { MongooseConfigService } from './modules/mongoose-config/mongoose-config.service';
 import { UnsplashModule } from './modules/unsplash/unsplash.module';
+import { CollectionsModule } from './features/collections/collections.module';
 
 @Module({
   imports: [
@@ -25,6 +26,7 @@ import { UnsplashModule } from './modules/unsplash/unsplash.module';
     AutomaticImageDownloadsModule,
     PhotographersModule,
     UnsplashModule,
+    CollectionsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
