@@ -1,0 +1,22 @@
+@url=http://localhost:4000/images
+
+### Create Image
+# @name createImage
+POST {{url}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "url": "https://unsplash.com/photos/a-squirrel-is-sitting-on-a-piece-of-wood-ANfir-tJ87c"
+}
+
+### Find by Id
+# @name findById
+GET {{url}}/660c5657d62259d7540da945/a-squirrel-is-sitting-on-a-piece-of-wood HTTP/1.1
+
+### Update Image
+# @name updateImage
+PATCH {{url}}/660c5657d62259d7540da945 HTTP/1.1
+
+### Delete Image
+# @name deleteImage
+DELETE {{url}}/660c5657d62259d7540da945 HTTP/1.1
